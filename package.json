@@ -8,7 +8,10 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "keywords": ["youtube", "electron"],
+  "keywords": [
+    "youtube",
+    "electron"
+  ],
   "author": "Nguyen Minh Quan",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +24,7 @@
     "electron-reloader": "^1.2.0"
   },
   "dependencies": {
+    "dbus": "^1.0.7",
     "electron-squirrel-startup": "^1.0.0"
   },
   "config": {

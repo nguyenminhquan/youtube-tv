@@ -1,5 +1,10 @@
 const { app, BrowserWindow, BrowserView, session } = require('electron')
 const path = require('path');
+var DBus = require('dbus')
+
+var service = DBus.registerService('session', 'nodejs.dbus.YoutubeTV');
+var obj = service.createObject('/nodejs/dbus/YoutubeTV');
+var iface = obj.createInterface('nodejs.dbus.YoutubeTV.Interface');
 
 function createWindow() {
 
